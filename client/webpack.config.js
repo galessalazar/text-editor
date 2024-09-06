@@ -27,7 +27,7 @@ module.exports = () => {
       // think offline capability
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'src-sw.js',
+        swDest: 'dist/src-sw.js',
       }),
 
       new WebpackPwaManifest({
@@ -74,4 +74,4 @@ module.exports = () => {
     },
   };
 };
-// npm run build when done
+// npm run build when done, actually start:dev
